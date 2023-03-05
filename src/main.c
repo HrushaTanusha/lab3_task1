@@ -21,6 +21,8 @@ int main(void) {
     printf("\n%i", students1[i]);
   }
   sort(students1);
+    for (int i = 0; i < 23; i++)
+    printf("\nSorted: %i ", students1[i]);
   
   sleep(1);
   
@@ -31,11 +33,13 @@ int main(void) {
     students2[i] = rand() % 1000;
     printf("\n%i", students2[i]);
   }
-  sort(students1);
+  sort(students2);
+  for (int i = 0; i < 23; i++)
+    printf("\nSorted: %i ", students2[i]);
   
   if (students1[2] > students2[2]) {
     printf("\n%i > %i \nfrom first class", students1[2], students2[2]);
-  } else if (students1[2] < students2[2]) {
+  } else if (students1[20] < students2[2]) {
     printf("\n%i < %i \nfrom second class", students1[2], students2[2]);
   } else if (students1[2] == students2[2]) {
     printf("\n%i = %i \nfirst = second", students1[2], students2[2]);
